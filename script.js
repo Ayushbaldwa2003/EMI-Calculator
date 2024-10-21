@@ -75,3 +75,23 @@ function calculateEMI2(loanAmount, loanTenure, interestRate, totalLoan) {
     document.getElementById('emiResult').innerText = `Your total loan is: ₹${totalLoan.toFixed(2)}. Your EMI is: ₹${emi.toFixed(2)}`;
 }
 
+
+
+/* 
+double ans=250000;
+    int years=4;
+    double interest=12;
+    double cal=(double)interest/12;
+    cal=cal/100;
+    cal=cal+1;
+    for(int i=0;i<years*12;i++){
+        ans=ans*cal;
+    }
+    double temp=1;
+    for(int i=1;i<years*12;i++){
+        temp=temp+Math.pow(cal,i);
+    }
+    System.out.println(ans);
+    System.out.println((ans/temp));
+    code that explains the maths in a bit more easier way
+*/
