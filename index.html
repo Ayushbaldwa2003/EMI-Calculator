@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <form id="emiForm">
+            <label for="educationLoan">Have you taken an education loan?</label>
+            <input type="checkbox" id="educationLoan" onchange="toggleLoanType()">
+            
+            <div id="educationLoanFields" style="display: none;">
+                <label for="feesPerSemester">Fees per Semester:</label>
+                <input type="number" id="feesPerSemester" required>
+
+                <label for="totalSemester">Total Semesters:</label>
+                <input type="number" id="totalSemester" min="1" required>
+
+                <label for="eduInterestRate">Interest Rate (annual):</label>
+                <input type="number" id="eduInterestRate" required>
+
+                <!-- <label for="totalLoan">Calculated Total Loan Amount:</label>
+                <input type="number" id="totalLoan" readonly> This will be auto-filled -->
+
+                <label for="eduTenure">Tenure (in years):</label>
+                <input type="number" id="eduTenure" min="1" required>
+            </div>
+
+            <div id="normalLoanFields">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" required>
+                
+                <label for="loanTenure">Tenure (in years):</label>
+                <input type="number" id="loanTenure" required>
+                
+                <label for="interestRate">Interest Rate (annual):</label>
+                <input type="number" id="interestRate" required>
+            </div>
+            
+            <button type="submit" onclick="cal()">Calculate EMI</button>
+        </form>
+        <h2 id="emiResult"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

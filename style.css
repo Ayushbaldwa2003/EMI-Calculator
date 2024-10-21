@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(87, 185, 195);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #00698f;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#emiResult {
+    text-align: center;
+    font-weight: bold;
+    color: #00698f;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#educationLoanFields, #normalLoanFields {
+    margin-top: 20px;
+}
+
+#educationLoanFields label, #normalLoanFields label {
+    margin-top: 15px;
+}
+
+#educationLoanFields input, #normalLoanFields input {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
